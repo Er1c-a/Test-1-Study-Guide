@@ -1,5 +1,4 @@
-#include <iostream>
-#include <string>
+#include "Libraries-allowed.h"
 //How to input and output
 int main()
 {
@@ -16,4 +15,29 @@ std::tolower()
     //puts into lowercase
 
 static_cast<type>(element)
-    //Forcibly changes the type of an element 
+    //Forcibly changes the type of an element
+
+int min = std::numeric_limits<int>::min()
+    //Initalize lowest possible int value
+int max = std::numeric_limits<int>::max()
+    //Initalize highest possible int value
+
+//Cycles through all the characters of string
+    for(char c : string)
+
+// Iterate in reverse from the last element to the first
+std::vector<int> nums {1, 2, 4, 8, 16};
+for (auto it = nums.rbegin(); it != nums.rend(); ++it)
+{
+    std::cout << *it << " "; // Output: 16 8 4 2 1
+}
+//constructs a new string "low" by iterating from end to beginning
+return low == string(low.rbegin(), low.rend());
+
+//Initalize a 2D vector
+std::vector<vector<type>> vec {};
+using Matrix = std::vector<std::vector<int>>;
+
+// static variables
+static int count = 0;
+

@@ -53,6 +53,7 @@ int unique(vector<int>& vec)
         }
     }
 }
+
 // Extracts each digit & then moves onto the next one
 int ExtractDigit(int x)
 {
@@ -65,4 +66,121 @@ int ExtractDigit(int x)
         x/=10;
     }
     return  rev;
+}
+
+//Reverses a list in order
+void reverseList(vector<int>& vec)
+{
+    int back = static_cast<int>(vec.size())-1;
+    int front = 0;
+    while (front < back)
+    {
+        std::swap(vec[front],vec[back]);
+        ++front;
+        --back;
+    }
+}
+
+// returns a vector of unique words
+vector<string> uniqueWords(string str)
+{
+    vector<string> dict;
+    string current;
+    for(char c : str)
+    {
+        c = static_cast<char>(std::tolower(static_cast<unsigned char>(c)));
+        if (!std::isalnum(static_cast<unsigned char>(c)))
+        {
+            if(!current.empty())
+            {
+                bool duplicate = false;
+                for(const string& word : dict)
+                {
+                    if(word == current)
+                    {
+                        duplicate = true;
+                        break;
+                    }
+                }
+                if(!duplicate)
+                {
+                    dict.push_back(current);
+                }
+                current.clear();
+            }
+            continue;
+        }
+        current.push_back(c);
+    }
+    if(!current.empty())
+    {
+        bool duplicate = false;
+        for(const string& word : dict)
+        {
+            if(word == current)
+            {
+                duplicate = true;
+                break;
+            }
+        }
+        if(!duplicate)
+        {
+            dict.push_back(current);
+        }
+    }
+    return dict;
+}
+
+//find the index of a specific element
+int find(const vector<int>& vec, int b)
+{
+    for(int i = 0; i<vec.size(); i++)
+    {
+    if(vec[i] == b)
+        {
+            return i;
+        }
+    }
+    return -1;
+}
+
+//Find elements in both vectors
+vector<int> unionOfVector(const vector<int>& a,const vector<int> b)
+{
+    vector<int> refa;
+    for(int i=0; i<a.size();i++)
+    {
+        if(find(refa,a[i])<0)
+        {
+            refa.push_back(a[i]);
+        }
+    }
+    for(int i = 0; i<b.size();i++)
+    {
+        int e = b[i];
+        if(find(a,e)>=0)
+        {
+            if(find(refa,e)<0)
+            {
+            refa.push_back(e);
+            }
+        }
+    }
+return refa;
+}
+
+//Rotate a vector in place
+vector<int> rotateVector(const vector<int>& vec, int num)
+{
+    int size = static_cast<int>(vec.size());
+    vector<int> ret(size);
+    if (size == 0) return ret;
+    int shift = num % size;
+    if (num <0) shift = shift + size;
+    for(int i=0; i<size; i++)
+    {
+        int pos = (i+shift) % size;
+        ret[pos] = vec[i];
+    }
+    return ret;
 }
