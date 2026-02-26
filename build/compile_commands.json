@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Computational Engineering/Test 1 Study Guide/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -Werror -Wall -Wextra -Wconversion -Wnarrowing -Wpedantic -Wno-sign-compare -Wno-unused-variable -o CMakeFiles\\main.dir\\main.cpp.obj -c \"C:\\Computational Engineering\\Test 1 Study Guide\\main.cpp\"",
+  "file": "C:/Computational Engineering/Test 1 Study Guide/main.cpp",
+  "output": "CMakeFiles/main.dir/main.cpp.obj"
+}
+]
