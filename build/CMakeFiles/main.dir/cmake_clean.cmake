@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/main.dir/Msc-functions.cpp.obj"
+  "CMakeFiles/main.dir/Msc-functions.cpp.obj.d"
+  "CMakeFiles/main.dir/Reference.cpp.obj"
+  "CMakeFiles/main.dir/Reference.cpp.obj.d"
   "CMakeFiles/main.dir/main.cpp.obj"
   "CMakeFiles/main.dir/main.cpp.obj.d"
   "libmain.dll.a"

@@ -5,7 +5,7 @@ project(exercise LANGUAGES CXX )
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(main main.cpp)
+add_executable(main main.cpp Msc-functions.cpp Reference.cpp Libraries-allowed.h)
 target_compile_options(main PRIVATE -Werror -Wall -Wextra -Wconversion -Wnarrowing -Wpedantic -Wno-sign-compare -Wno-unused-variable)
 
 # -Werror: Treat warnings as errors. Without this flag a warning is generated when compiling, but you might miss it.

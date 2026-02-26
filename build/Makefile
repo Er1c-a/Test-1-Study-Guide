@@ -128,6 +128,54 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+Msc-functions.obj: Msc-functions.cpp.obj
+.PHONY : Msc-functions.obj
+
+# target to build an object file
+Msc-functions.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/Msc-functions.cpp.obj
+.PHONY : Msc-functions.cpp.obj
+
+Msc-functions.i: Msc-functions.cpp.i
+.PHONY : Msc-functions.i
+
+# target to preprocess a source file
+Msc-functions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/Msc-functions.cpp.i
+.PHONY : Msc-functions.cpp.i
+
+Msc-functions.s: Msc-functions.cpp.s
+.PHONY : Msc-functions.s
+
+# target to generate assembly for a file
+Msc-functions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/Msc-functions.cpp.s
+.PHONY : Msc-functions.cpp.s
+
+Reference.obj: Reference.cpp.obj
+.PHONY : Reference.obj
+
+# target to build an object file
+Reference.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/Reference.cpp.obj
+.PHONY : Reference.cpp.obj
+
+Reference.i: Reference.cpp.i
+.PHONY : Reference.i
+
+# target to preprocess a source file
+Reference.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/Reference.cpp.i
+.PHONY : Reference.cpp.i
+
+Reference.s: Reference.cpp.s
+.PHONY : Reference.s
+
+# target to generate assembly for a file
+Reference.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/Reference.cpp.s
+.PHONY : Reference.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -161,6 +209,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... main
+	@echo ... Msc-functions.obj
+	@echo ... Msc-functions.i
+	@echo ... Msc-functions.s
+	@echo ... Reference.obj
+	@echo ... Reference.i
+	@echo ... Reference.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

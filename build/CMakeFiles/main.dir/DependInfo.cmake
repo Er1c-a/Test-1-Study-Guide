@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/Computational Engineering/Test 1 Study Guide/Msc-functions.cpp" "CMakeFiles/main.dir/Msc-functions.cpp.obj" "gcc" "CMakeFiles/main.dir/Msc-functions.cpp.obj.d"
+  "C:/Computational Engineering/Test 1 Study Guide/Reference.cpp" "CMakeFiles/main.dir/Reference.cpp.obj" "gcc" "CMakeFiles/main.dir/Reference.cpp.obj.d"
   "C:/Computational Engineering/Test 1 Study Guide/main.cpp" "CMakeFiles/main.dir/main.cpp.obj" "gcc" "CMakeFiles/main.dir/main.cpp.obj.d"
   )
 
