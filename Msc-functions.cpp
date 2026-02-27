@@ -26,7 +26,7 @@ return false;
 }
 
 //Find unique elements in a vector and put them into a new one
-int unique(vector<int>& vec)
+vector<int> unique(vector<int>& vec)
 {
     //set up unique vector
     vector<int> unique;
@@ -52,6 +52,7 @@ int unique(vector<int>& vec)
             unique.push_back(num);
         }
     }
+    return unique;
 }
 
 // Extracts each digit & then moves onto the next one
@@ -192,23 +193,6 @@ vector<int> rotateVector(const vector<int>& vec, int num)
     return ret;
 }
 
-//removes all alphanumeric characters
-void removePunctuation(string& str)
-{
-    for(int i = 0; i<str.length();)
-    {
-        
-        if(isalnum(static_cast<unsigned char>(str[i])))
-        {
-            str.erase(i,1);
-        }
-        else
-        {
-            i++;
-        }
-    }
-}
-
 // Take the deravative of a polynominal
 void takePolyDerivative(vector<double>& poly)
 {
@@ -255,7 +239,7 @@ int findsecond(vector<int>unique)
 }
 
 //remove a specific character
-void removeDigits(string& str)
+void removeCharacter(string& str)
 {
     for (size_t i = 0; i < str.size(); )
     {
@@ -270,3 +254,16 @@ void removeDigits(string& str)
     }
 }
 
+string problems:
+// Pattern 1: erase while iterating
+for (size_t i = 0; i < str.size(); ) {
+    if (condition) str.erase(i, 1);
+    else i++;
+}
+
+// Pattern 2: build new string
+string out;
+for (char c : str) {
+    if (!condition) out.push_back(c);
+}
+str = out;
