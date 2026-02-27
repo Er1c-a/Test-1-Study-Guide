@@ -1,6 +1,6 @@
 #include "Libraries-allowed.h"
 
-//Pay attention to what is says
+//Pay attention to what it says
 pass a reference = & not const &
 
 //How to input and output
@@ -51,7 +51,6 @@ static int count = 0;
 therefore, if you want to erase at a certian spot, do
 str.erase(i,1);
     This means erase one character at index i
-
 
 '\0' means not a space or letter
 
