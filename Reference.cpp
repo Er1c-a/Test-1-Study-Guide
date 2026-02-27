@@ -1,4 +1,8 @@
 #include "Libraries-allowed.h"
+
+//Pay attention to what is says
+pass a reference = & not const &
+
 //How to input and output
 int main()
 {
