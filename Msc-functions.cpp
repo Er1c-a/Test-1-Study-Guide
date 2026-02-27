@@ -184,3 +184,42 @@ vector<int> rotateVector(const vector<int>& vec, int num)
     }
     return ret;
 }
+
+//removes all alphanumeric characters
+void removePunctuation(string& str)
+{
+    for(int i = 0; i<str.length();)
+    {
+        
+        if(isalnum(static_cast<unsigned char>(str[i])))
+        {
+            str.erase(i,1);
+        }
+        else
+        {
+            i++;
+        }
+    }
+}
+
+// Take the deravative of a polynominal
+void takePolyDerivative(vector<double>& poly)
+{
+    if(poly.empty())
+    {
+        return;
+    }
+    int n = static_cast<int>(poly.size());
+    if (n == 1)
+    {
+        poly = {0.0};
+        return;
+    }
+    int power = n-1;
+    for(int i=0;i<n-1;i++)
+    {
+        int p = power - i;
+        poly[i] = poly[i] * p;
+    }
+    poly.pop_back();
+}

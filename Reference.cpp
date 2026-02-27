@@ -46,3 +46,9 @@ using Matrix = std::vector<std::vector<int>>;
 // static variables
 static int count = 0;
 
+//erase
+(string).erase() cannot erase a specfic character; it only takes indexs
+therefore, if you want to erase at a certian spot, do
+str.erase(i,1);
+    This means erase one character at index i
+
