@@ -223,3 +223,26 @@ void takePolyDerivative(vector<double>& poly)
     }
     poly.pop_back();
 }
+
+    
+//find the second largest in a vector
+int findsecond(vector<int>unique)
+{
+
+    int first = numeric_limits<int>::min();
+    int second = numeric_limits<int>::min();
+
+    for (int num : unique)
+    {
+        if (num > first)
+        {
+            second = first;
+            first = num;
+        }
+        else if (num > second)
+        {
+            second = num;
+        }
+    }
+    return second;
+}

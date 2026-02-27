@@ -52,3 +52,5 @@ therefore, if you want to erase at a certian spot, do
 str.erase(i,1);
     This means erase one character at index i
 
+
+'\0' means not a space or letter
