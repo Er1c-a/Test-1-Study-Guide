@@ -54,3 +54,6 @@ str.erase(i,1);
 
 
 '\0' means not a space or letter
+
+std::isspace(char c);
+// used in cctype, checks if a character is whitespace

@@ -174,12 +174,19 @@ vector<int> rotateVector(const vector<int>& vec, int num)
 {
     int size = static_cast<int>(vec.size());
     vector<int> ret(size);
-    if (size == 0) return ret;
+    if (size == 0)
+    {
+        return ret;
+    }
     int shift = num % size;
-    if (num <0) shift = shift + size;
+    if (num <0) 
+    {
+        shift = shift + size;
+        //converts a negative shift to a positive one
+    }
     for(int i=0; i<size; i++)
     {
-        int pos = (i+shift) % size;
+        int pos = (i+shift) % size; //shifts and wraps around the vector
         ret[pos] = vec[i];
     }
     return ret;
@@ -246,3 +253,20 @@ int findsecond(vector<int>unique)
     }
     return second;
 }
+
+//remove a specific character
+void removeDigits(string& str)
+{
+    for (size_t i = 0; i < str.size(); )
+    {
+        if (iteration variable(i) == designated erase flag)
+        {
+            str.erase(i, 1);   // erase digit, do NOT increment i
+        }
+        else
+        {
+            i++;               // only advance when nothing erased
+        }
+    }
+}
+
