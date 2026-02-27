@@ -16,6 +16,7 @@ int main()
     //Adds a new element to the end of a vector
 
 std::tolower()
+char lower = std::tolower(static_cast<unsigned char>(str[i]));
     //puts into lowercase
 
 static_cast<type>(element)
